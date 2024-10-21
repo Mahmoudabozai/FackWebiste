@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css Page-->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <!--Icon-->
+    <link rel="icon" href="../img/icons/logo.jpg">
+    <!--Title Page-->
+    <title>Application Employment</title>
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!--Icon link FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Link Cursoll Swiper Liprary-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--BoxIcon Library-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Up To Top-->
+    <button class="btnUpTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- Icon whatsapp -->
+    <a href="tel:0123456789123" id="whatsapp-icon" class="fixed-bottom">
+        <img src="../img/icons/whatsapp.png" width="50" alt="Whatsapp-chat">
+    </a>
+    <div class="fixed-top">
+        <!-- Topbar -->
+        <!-- <div class="topbar" id="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 order-1 order-2">
+                        <ul class="list-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-1 order-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-envelope-at-fill"></i> <span>Example#example.com</span></a></li>
+                            <li><a href="tel:0123456789123" target="_blank"><i class="bi bi-headset"></i> <span>0123456789123</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="home.html" id="logo">
+                    Logo
+                </a>
+                <button class="navbar-toggler" id="btn-toggle-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../img/text.png" width="50" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html" id="nav-item">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html" id="nav-item">About Us <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="courses.html" id="nav-item">Courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pricing.html" id="nav-item">packeges <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html" id="nav-item">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="enroll.html" id="nav-item">Enroll <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" role="button" id="nav-item" data-toggle="dropdown" aria-expanded="false">
+                                More <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="teachers.html" id="nav-item-drop">Our Teachers</a>
+                                <a class="dropdown-item" href="student.html" id="nav-item-drop">Our Student</a>
+                                <a class="dropdown-item" href="blogs.html" id="nav-item-drop">Our Blogs</a>
+                                <a class="dropdown-item" href="faqs.html" id="nav-item-drop">FAQS</a>
+                                <a class="dropdown-item" href="enroll.html" id="nav-item-drop">Enroll</a>
+                                <a class="dropdown-item" href="teachApp.html" id="nav-item-drop">Apply Jop</a>
+                                <a class="dropdown-item" href="payment.html" id="nav-item-drop">Payment</a>
+                                <a class="dropdown-item" href="policy.html" id="nav-item-drop">Privacy Policy</a>
+                                <a class="dropdown-item" href="ourterms.html" id="nav-item-drop">Terms & Conditions</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-facebook"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-instagram"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-x-twitter"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-linkedin-in"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-youtube"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html" id="nav-item">Login <span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link" href="#" id="nav-item-lang">AR <span class="sr-only">(current)</span></a>
+                        </li> -->
+                        <li class="nav-item active d-none d-lg-flex">
+                            <a class="nav-link active" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto" id="ul-login">
+                    <li class="nav-item active">
+                        <a class="nav-link active" style="text-decoration: none !important;" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Page Title -->
+    <div class="page-title" id="page-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <h2>Application Employment</h2>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Teacher Application Employment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="enroll-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <img src="../img/hand-holding-writing-checklist-application-form-document-clipboard-white-background-3d-illustration.png" id="img-form" class="w-100" alt="">
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb-4">
+                            <a href="home.html" id="logo">Logo</a>
+                            <img src="../img/view-3d-practicing-lawyer.jpg" id="img-form2" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <form class="needs-validation" novalidate>
+                        
+                        <div class="title-form">
+                            Teacher Application Employment
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom01">Your name</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Your name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom02">Your Email</label>
+                                <input type="email" class="form-control" id="validationCustom02" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Your Phone number</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Your Phone number" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom04">Date</label>
+                                <input type="email" class="form-control" id="validationCustom04" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationTooltip05">How Many Years Of Experience ?</label>
+                                <select class="custom-select" id="validationTooltip05" required>
+                                    <option selected disabled value="">How Many Years Of Experience ?</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>more</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom06">English Level</label>
+                                <select class="custom-select" id="validationTooltip06" required>
+                                    <option selected disabled value="">English Level</option>
+                                    <option>B1</option>
+                                    <option>B</option>
+                                    <option>C1</option>
+                                    <option>C</option>
+                                    <option>A</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom07">Please attach only doc or pdf file. please less than 5mb</label>
+                                <input type="file" class="form-control" id="validationCustom07" placeholder="Student Age" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom08">Record first 3 verses from surat Alanbiiaa</label>
+                                <input type="file" class="form-control" id="validationCustom08" placeholder="Student Age" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom09">Record a demo session that you explain tafesse Surat Alfatiha</label>
+                                <input type="file" class="form-control" id="validationCustom09" placeholder="Student Age" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="textarea">Do you have any comment?</label>
+                                <textarea class="form-control" id="textarea" placeholder="Your Comment" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-success" id="btn-data" type="submit">
+                            Upload Resume
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="logo-footer" id="logo">
+                        Logo
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eveniet aperiam harum quos nisi. In aliquid velit et similique modi id deleniti quae? Perspiciatis, obcaecati? Voluptatem accusantium hic sequi neque.</p>
+                    <ul class="list-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Contacts</h2>
+                        <p>
+                            Abrag Alkholafaa <br>
+                            Tanta City<br>
+                            Egypt <br><br>
+                            <strong>Phone:</strong> +0123456789123<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div id="useful-links">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Packeges</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Subscribe For Updates</h2>
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom03">E-mail *</label>
+                                    <input type="email" class="form-control" id="validationCustom03" placeholder="Your Email *" required>
+                                </div>
+                            </div>
+                            <button class="btn btn-success" id="btn-section" type="submit">Send Message  <i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr id="hr-page">
+            <div class="copyright-footer">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        Copyright 2024 © <strong><a href="/">Olspark Academy</a></strong>. All rights reserved.
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="../js/main.js"></script>
+</body>
+</html>

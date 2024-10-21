@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css Page-->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <!--Icon-->
+    <link rel="icon" href="../img/icons/logo.jpg">
+    <!--Title Page-->
+    <title>ALdoha Academy</title>
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!--Icon link FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Link Cursoll Swiper Liprary-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--BoxIcon Library-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Up To Top-->
+    <button class="btnUpTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- Icon whatsapp -->
+    <a href="tel:0123456789123" id="whatsapp-icon" class="fixed-bottom">
+        <img src="../img/icons/whatsapp.png" width="50" alt="Whatsapp-chat">
+    </a>
+    <div class="fixed-top">
+        <!-- Topbar -->
+        <!-- <div class="topbar" id="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 order-1 order-2">
+                        <ul class="list-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-1 order-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-envelope-at-fill"></i> <span>Example#example.com</span></a></li>
+                            <li><a href="tel:0123456789123" target="_blank"><i class="bi bi-headset"></i> <span>0123456789123</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="home.html" id="logo">
+                    Olspark
+                </a>
+                <button class="navbar-toggler" id="btn-toggle-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../img/text.png" width="50" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html" id="nav-item">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html" id="nav-item">About Us <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="courses.html" id="nav-item">Courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pricing.html" id="nav-item">packeges <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html" id="nav-item">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="enroll.html" id="nav-item">Enroll <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" role="button" id="nav-item" data-toggle="dropdown" aria-expanded="false">
+                                More <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="teachers.html" id="nav-item-drop">Our Teachers</a>
+                                <a class="dropdown-item" href="student.html" id="nav-item-drop">Our Student</a>
+                                <a class="dropdown-item" href="blogs.html" id="nav-item-drop">Our Blogs</a>
+                                <a class="dropdown-item" href="faqs.html" id="nav-item-drop">FAQS</a>
+                                <a class="dropdown-item" href="enroll.html" id="nav-item-drop">Enroll</a>
+                                <a class="dropdown-item" href="teachApp.html" id="nav-item-drop">Apply Jop</a>
+                                <a class="dropdown-item" href="payment.html" id="nav-item-drop">Payment</a>
+                                <a class="dropdown-item" href="policy.html" id="nav-item-drop">Privacy Policy</a>
+                                <a class="dropdown-item" href="ourterms.html" id="nav-item-drop">Terms & Conditions</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-facebook"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-instagram"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-x-twitter"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-linkedin-in"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-youtube"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html" id="nav-item">Login <span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link" href="#" id="nav-item-lang">AR <span class="sr-only">(current)</span></a>
+                        </li> -->
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto" id="ul-login">
+                    <li class="nav-item active">
+                        <a class="nav-link active" style="text-decoration: none !important;" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body d-flex">
+                    <iframe style="margin: auto; width: 100%;" src="https://www.youtube.com/embed/lW9ep22YmlM?si=gRGZ_EQZRyg94Ihr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; pusue; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Home // Panner -->
+    <div class="home" id="home">
+        <!-- <img src="../img/home2.jpg" class="w-100" id="img-home" alt=""> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 d-flex align-items-center">
+                    <div class="content-home">
+                        <h2>Welcom to <span>Olspark</span> Academy</h2>
+                        <p>An educational platform providing Quranic studies, Arabic language and Islamic teachings for all ages with expert instructors from Al-Azhar Al-Sharif in Egypt.</p>
+                        <div class="btns-home">
+                            <a href="enroll.html" class="btn" id="btn-home">
+                                Free Trial
+                            </a>
+                            <a class="video-btn is-play popup-youtube mr-5" style="cursor: pointer;" data-toggle="modal" data-target="#modalVideo">
+                                <div class="video-btn-outer-circle has-scale-animation"></div>
+                                <div class="video-btn-outer-circle has-scale-animation has-delay-short"></div>
+                                <div class="video-btn-icon is-play">
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5" style="position: relative;">
+                    <figure>
+                        <img src="../img/hero-icon.png" alt="Teaching Online Since 2003">
+                    </figure>
+                    <img src="../img/home-bg.png" class="w-100 img-home1" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <svg class="svg-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="svg-waves__parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg> -->
+    <!-- Modal -->
+    <div class="modal fade" id="modalVideo-about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body d-flex">
+                    <iframe style="margin: auto; width: 100%;" src="https://www.youtube.com/embed/lW9ep22YmlM?si=gRGZ_EQZRyg94Ihr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; pusue; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 order-1 order-md-2 reveal" style="position: relative;">
+                    <div class="video-about">
+                        <a class="video-btn is-play popup-youtube mr-5" style="cursor: pointer;" data-toggle="modal" data-target="#modalVideo-about">
+                            <div class="video-btn-outer-circle has-scale-animation"></div>
+                            <div class="video-btn-outer-circle has-scale-animation has-delay-short"></div>
+                            <div class="video-btn-icon is-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <img src="../img/girl.png" class="w-100" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 order-2 order-md-1 align-content-center reveal">
+                    <span class="sup-title">ABOUT US</span>
+                    <h2 class="title-section">Best Online Quran Academy</h2>
+                    <p class="discreption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="discreption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="about.html" class="btn" id="btn-section">
+                        Show More <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us -->      
+    <div class="whyChooseUs" id="whyChooseUs">
+        <div class="container">
+            <div class="row m-auto justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="title-section">Why did we choose the name Olspark?</h2>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card  reveal" id="card-whyus" style="animation-delay: 0.4s;">
+                        <div class="top-img" id="topimg-whyus">
+                            <img src="../img/trial.png" alt="">
+                        </div>
+                        <div class="card-body" id="cardbody-whyus">
+                            <h2>Free Trial Classes</h2>
+                            <p>We offer complete 2 free trial classes for all courses to evaluate our tutors and courses.</p>
+                            <a href="enroll.html" class="btn" id="btn-section">
+                                Book Free Trial    <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card  reveal" id="card-whyus" style="transition: all 1.4s ;">
+                        <div class="top-img" id="topimg-whyus">
+                            <img src="../img/24-hours-support.png" alt="">
+                        </div>
+                        <div class="card-body" id="cardbody-whyus">
+                            <h2>Flexible Timing Schedule</h2>
+                            <p>Our classes & teachers are available 24/7 and you can choose the time that suits you.</p>
+                            <a href="enroll.html" class="btn" id="btn-section">
+                                Book Free Trial    <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card  reveal" id="card-whyus" style="transition: all 1.8s ;">
+                        <div class="top-img" id="topimg-whyus">
+                            <img src="../img/unisex.png" alt="">
+                        </div>
+                        <div class="card-body" id="cardbody-whyus">
+                            <h2>male And Female Tutors Available</h2>
+                            <p>We have professional and experienced male and female tutors to teach you or your kids.</p>
+                            <a href="enroll.html" class="btn" id="btn-section">
+                                Book Free Trial    <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--How To start-->
+    <!-- Steps // How To Start -->
+    <div id="howToStart" class="howToStart">
+        <div class="container">
+            <div class="row m-auto justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="title-section">HOW TO START LEARNING QURAN AND ARABIC ONLINE AT <br> Olspark Academy?</h2>
+                </div>
+            </div>
+            <div class="row m-auto justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <img src="../img/view-3d-practicing-lawyer.jpg" id="img-steps1" class="w-100" alt="">
+                </div>
+                <div class="col-lg-7 mt-4 col-md-6 reveal position-relative align-content-center">
+                    <div class="card" id="card-steps">
+                        <img src="../img/view-3d-practicing-lawyer.jpg" alt="">
+                        <div class="card-body" id="cardbody-steps">
+                            <h2>STEP 1</h2>
+                            <h5>Fill in The Free Trial Form</h5>
+                            <p>Fill in this form, you will receive this confirmation then our support will contact you and confirm the appointment you selected for the free trial session.</p>
+                            <a href="enroll.html" class="btn" id="btn-section">
+                                Book Free Trial    <i class="bi bi-arrow-right-short"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-auto justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <img src="../img/3d-hand-showing-thumbs-up-gesture.png" id="img-steps1" class="w-100" alt="">
+                </div>
+                <div class="col-lg-7 mt-4 col-md-6 reveal position-relative align-content-center">
+                    <div class="card" id="card-steps">
+                        <img src="../img/3d-hand-showing-thumbs-up-gesture.png" alt="">
+                        <div class="card-body" id="cardbody-steps">
+                            <h2>STEP 2</h2>
+                            <h5>Confirm The Appointment</h5>
+                            <p>Once you submit your free trial request, the assigned tutor from Aya Institute will contact you within 24 hrs via email, phone call, or WhatsApp to confirm appointment and further details.</p>
+                            <!-- <a href="enroll.html" class="btn" id="btn-section">
+                                Book Free Trial    <i class="bi bi-arrow-right-short"></i>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-auto justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <img src="../img/girl.png" id="img-steps1" class="w-100" alt="">
+                </div>
+                <div class="col-lg-7 mt-4 col-md-6 reveal position-relative align-content-center">
+                    <div class="card" id="card-steps">
+                        <img src="../img/girl.png" alt="">
+                        <div class="card-body" id="cardbody-steps">
+                            <h2>STEP 3</h2>
+                            <h5>Download A Meeting App</h5>
+                            <p>Download A Meeting app or Skype to start taking the class at the scheduled appointment. (Skype ID or A Meeting Room Link is provided upon appointment confirmation)</p>
+                            <a href="enroll.html" class="btn" id="btn-section">
+                                DOWNLOAD A Meeting APP    <i class="bi bi-arrow-right-short"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- blogs -->
+    <div class="blogs" id="blogs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center reveal">
+                    <h2 class="title-section">LATEST NEWS</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="card" id="card-blogs">
+                        <div class="top-img" id="topimg-blogs">
+                            <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="card-body" id="cardbody-blogs">
+                            <span class="blogs-track">Blog's Track</span>
+                            <ul class="listed-blog">
+                                <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                            </ul>
+                            <h2>Blog's Name</h2>
+                            <a href="blogDetails.html" class="btn" id="btn-section">
+                                Read More  <i class="bi bi-arrow-right-short"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="card" id="card-blogs">
+                        <div class="top-img" id="topimg-blogs">
+                            <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="card-body" id="cardbody-blogs">
+                            <span class="blogs-track">Blog's Track</span>
+                            <ul class="listed-blog">
+                                <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                            </ul>
+                            <h2>Blog's Name</h2>
+                            <a href="blogDetails.html" class="btn" id="btn-section">
+                                Read More  <i class="bi bi-arrow-right-short"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="card" id="card-blogs">
+                        <div class="top-img" id="topimg-blogs">
+                            <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="card-body" id="cardbody-blogs">
+                            <span class="blogs-track">Blog's Track</span>
+                            <ul class="listed-blog">
+                                <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                            </ul>
+                            <h2>Blog's Name</h2>
+                            <a href="blogDetails.html" class="btn" id="btn-section">
+                                Read More  <i class="bi bi-arrow-right-short"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-4 text-center reveal">
+                    <a href="blogs.html" class="btn" id="btn-section">
+                        Show More  <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact" class="contact-us-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 wow fadeInUp address text-light" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="address-items">
+                        <div class="item">
+                            <h4>Office Location</h4>
+                            <div class="info">
+                                <p>22 Baker Street,<br> London, United Kingdom,<br> W1U 3BW</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Contact Info</h4>
+                            <div class="info">
+                                <ul>
+                                    <li>Phone: <span>+44-20-7328-4499</span></li>
+                                    <li>Fax: <span>+44-20-7328-4499</span></li>
+                                    <li>Email: <span>info@digilab.com</span></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 wow fadeInLeft contact-form" style="visibility: visible; animation-name: fadeInLeft;">
+                    <h2>Need help? <strong>Let's ask your questions</strong></h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom01">Your Name</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" required>
+                                <!-- <div class="valid-feedback">
+                                    Thats Correct
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">E-mail *</label>
+                                <input type="email" class="form-control" id="validationCustom03" placeholder="Your Email *" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom05">Phone number</label>
+                                <input type="number" class="form-control" id="validationCustom05" placeholder="Your phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="textarea">Do you have comment ?</label>
+                                <textarea class="form-control" id="textarea" placeholder="Your Message" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-success" id="btn-section" type="submit">Send Message  <i class="fa fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="logo-footer" id="logo">
+                        Logo
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eveniet aperiam harum quos nisi. In aliquid velit et similique modi id deleniti quae? Perspiciatis, obcaecati? Voluptatem accusantium hic sequi neque.</p>
+                    <ul class="list-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Contacts</h2>
+                        <p>
+                            Abrag Alkholafaa <br>
+                            Tanta City<br>
+                            Egypt <br><br>
+                            <strong>Phone:</strong> +0123456789123<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div id="useful-links">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Packeges</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Subscribe For Updates</h2>
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom03">E-mail *</label>
+                                    <input type="email" class="form-control" id="validationCustom03" placeholder="Your Email *" required>
+                                </div>
+                            </div>
+                            <button class="btn btn-success" id="btn-section" type="submit">Send Message  <i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr id="hr-page">
+            <div class="copyright-footer">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        Copyright 2024 © <strong><a href="/">Olspark Academy</a></strong>. All rights reserved.
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="../js/main.js"></script>
+</body>
+</html>

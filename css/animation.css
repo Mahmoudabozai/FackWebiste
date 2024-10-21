@@ -1,0 +1,241 @@
+@keyframes animation-pop {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+@keyframes btntopicon {
+    0%{
+        transform: translateY(-13px);
+    }
+    100%{
+        transform: translateY(13px);
+    }
+}
+@keyframes form-scale {
+    0%{
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+
+@keyframes animation-scaleLeftRight {
+    0% { 
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes animation-top-to-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes animation-bottom-to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes animation-scaleRightLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animation-blur {
+    0%{
+        filter: blur(20px);
+    }
+    100%{
+        filter: blur(0);
+    }
+}
+
+/* top to bottom */
+@keyframes animation-scale {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animation-topToBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes animation-scalezoom {
+    0% {
+        opacity: 0;
+        transform: scale(5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animation-leftToright {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animation-rightToleft {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }   
+}
+/* topp and bottom (both) */
+@keyframes animation-topAndbottom {
+    0% {
+        transform: translateY(7px);
+    }
+   
+    100% {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* top to bottom */
+@keyframes animation-scaleReveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.15);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+@keyframes smallScale {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes pulsate-btn {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+@keyframes spinnerRotate {
+    0% {
+        transform: rotate(0deg) translateX(57px);
+    }
+    
+    100% {
+        transform: rotate(360deg) translateX(57px);
+    }
+}
+
+/* right To left */
+.revealleft{    
+    transform: translate(50%,50%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+
+.revealleft.active{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+
+/* left To right */
+.revealright{    
+    transform: translate(-50%,50%);
+    opacity: 0;
+    transition: all 1s ease;
+    }
+.revealright.active{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+/* .reveal-whyus{    
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal-whyus.active{
+    animation: animation-scaleReveal 1s ease forwards;
+    opacity: 0;
+} */

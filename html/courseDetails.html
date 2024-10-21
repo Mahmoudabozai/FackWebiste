@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css Page-->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <!--Icon-->
+    <link rel="icon" href="../img/icons/logo.jpg">
+    <!--Title Page-->
+    <title>Course Details Page</title>
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!--Icon link FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Link Cursoll Swiper Liprary-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--BoxIcon Library-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Up To Top-->
+    <button class="btnUpTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- Icon whatsapp -->
+    <a href="tel:0123456789123" id="whatsapp-icon" class="fixed-bottom">
+        <img src="../img/icons/whatsapp.png" width="50" alt="Whatsapp-chat">
+    </a>
+    <div class="fixed-top">
+        <!-- Topbar -->
+        <!-- <div class="topbar" id="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 order-1 order-2">
+                        <ul class="list-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-1 order-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-envelope-at-fill"></i> <span>Example#example.com</span></a></li>
+                            <li><a href="tel:0123456789123" target="_blank"><i class="bi bi-headset"></i> <span>0123456789123</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="home.html" id="logo">
+                    Logo
+                </a>
+                <button class="navbar-toggler" id="btn-toggle-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../img/text.png" width="50" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html" id="nav-item">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html" id="nav-item">About Us <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="courses.html" id="nav-item">Courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pricing.html" id="nav-item">packeges <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html" id="nav-item">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="enroll.html" id="nav-item">Enroll <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" role="button" id="nav-item" data-toggle="dropdown" aria-expanded="false">
+                                More <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="teachers.html" id="nav-item-drop">Our Teachers</a>
+                                <a class="dropdown-item" href="student.html" id="nav-item-drop">Our Student</a>
+                                <a class="dropdown-item" href="blogs.html" id="nav-item-drop">Our Blogs</a>
+                                <a class="dropdown-item" href="faqs.html" id="nav-item-drop">FAQS</a>
+                                <a class="dropdown-item" href="enroll.html" id="nav-item-drop">Enroll</a>
+                                <a class="dropdown-item" href="teachApp.html" id="nav-item-drop">Apply Jop</a>
+                                <a class="dropdown-item" href="payment.html" id="nav-item-drop">Payment</a>
+                                <a class="dropdown-item" href="policy.html" id="nav-item-drop">Privacy Policy</a>
+                                <a class="dropdown-item" href="ourterms.html" id="nav-item-drop">Terms & Conditions</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-facebook"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-instagram"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-x-twitter"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-linkedin-in"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-youtube"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html" id="nav-item">Login <span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link" href="#" id="nav-item-lang">AR <span class="sr-only">(current)</span></a>
+                        </li> -->
+                        <li class="nav-item active d-none d-lg-flex">
+                            <a class="nav-link active" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto" id="ul-login">
+                    <li class="nav-item active">
+                        <a class="nav-link active" style="text-decoration: none !important;" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Page Title -->
+    <div class="page-title" id="page-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <h2>Course Details</h2>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Course Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalVideo-courses" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body d-flex">
+                    <iframe style="margin: auto; width: 100%;" src="https://www.youtube.com/embed/lW9ep22YmlM?si=gRGZ_EQZRyg94Ihr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; pusue; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Course Details -->
+    <section class="course-details pt-120 pb-120">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-lg-12 text-center reveal">
+                    <h2 class="title-section">Courses Details</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="course-details-img">
+                        <img src="../img/3d-ramadan-celebration-elements-scene.jpg" alt="Course">
+                    </div>
+                    <div class="course-details-content">
+                        <h2 class="title mb-30">Course's Name</h2>
+                        <p class="desc">Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any websitet in on visitors.Web designing in a powerful way of just not an only profession Web designing in a powerful way of just not an only </p>
+                        <div class="course-content-item">
+                            <h3 class="title">More Features</h3>
+                            <p class="desc">Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any websitet in on visitors.Web designing in a powerful way of just not an only profession Web designing in a powerful way of just not an only </p>
+                        </div>
+                        <div class="course-content-item">
+                            <h3 class="title">course all details</h3>
+                            <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorr posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam </p>
+                        </div>
+                        <ul class="course-details-list">
+                            <li><i class="fa-solid fa-square-check"></i>Transform your space, transform your life Transform your space, transform your life</li>
+                            <li><i class="fa-solid fa-square-check"></i>Elevate your interior, elevate your lifestyle Elevate your interior, elevate your lifestyle</li>
+                            <li><i class="fa-solid fa-square-check"></i>Discover the beauty within your Elevate your interior, elevate your lifestylewalls</li>
+                            <li><i class="fa-solid fa-square-check"></i>Design your dream space, one room at a time Elevate your interior, elevate your lifestyle</li>
+                        </ul>
+                        <div class="courses__details-inner">
+                            <h3 class="title">What Will You Learn?</h3>
+                            <p>This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, iaws dumm
+                                text used in laying out print, graphic or web designsm dolor sit amet.</p>
+                            <div class="event-details-list">
+                                <ul class="list-wrap">
+                                    <li><i class="fa-solid fa-square-check"></i>Arabic Alphabets</li>
+                                    <li><i class="fa-solid fa-square-check"></i>Harakaat (Short Vowels) </li>
+                                    <li><i class="fa-solid fa-square-check"></i>Joining the letters together</li>
+                                    <li><i class="fa-solid fa-square-check"></i>Sukoon & Saakinah letters </li>
+                                    <li><i class="fa-solid fa-square-check"></i>Tanween</li>
+                                    <li><i class="fa-solid fa-square-check"></i>Madd Letters</li>
+                                    <li><i class="fa-solid fa-square-check"></i>Shaddah</li>
+                                    <li><i class="fa-solid fa-square-check"></i>Reading Practice</li>
+                                    <li><i class="fa-solid fa-square-check"></i>Examination.</li>
+                                    <li><i class="fa-solid fa-square-check"></i>Others</li>
+                                    <!-- <li><i class="fa-solid fa-square-check"></i>How to use premade UI kits.</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-widget">
+                        <div class="thumb">
+                            <img src="../img/3d-ramadan-celebration-elements-scene.jpg" alt="img">
+                            <a href="#" class="popup-video" data-toggle="modal" data-target="#modalVideo-courses"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="event-cost-wrap">
+                            <!-- <h4 class="price"><strong>Costs:</strong>$25.00 <span>$84.99</span></h4> -->
+                            <a href="enroll.html" class="btn">Enroll This Now</a>
+                            <div class="event-information-wrap">
+                                <h6 class="title">Include This Course</h6>
+                                <ul class="list-wrap">
+                                    <li><i class="bi bi-clock"></i>Duration <span>(5.2 Hours)</span></li>
+                                    <li><i class="bi bi-file-earmark-text"></i>Estimated Seat <span>(250)</span></li>
+                                    <li><i class="bi bi-people"></i>Joined <span>(190)</span></li>
+                                    <li><i class="bi bi-bar-chart-line-fill"></i>Laguage <span>(English)</span></li>
+                                    <li><i class="bi bi-lightning-charge"></i>Category <span>(Desing)</span></li>
+                                    <li><i class="bi bi-share"></i>Share
+                                        <ul class="list-wrap event-social">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- courses -->
+    <div class="courses" id="courses">
+        <div class="container">
+            <div class="row">
+                <div class="swiper mySwiper-courses">
+                    <div class="d-flex align-items-end justify-content-between">
+                        <h2 class="title-section mb-0">Related Courses</h2>
+                        <div class="d-flex align-items-center w-100" id="btns-coursesSwiper">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="swiper-sweip-testmonial">
+                            <div class="card reveal" id="card-courses">
+                                <div class="top-img" id="topimg-courses">
+                                    <img src="../img/close-up-hands-typing-keyboard.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body" id="cardbody-courses">
+                                    <span class="courses-track">Course's Track</span>
+                                    <!-- <ul class="listed-blog">
+                                        <li><i class="fa-regular fa-calendar-check"></i>  18 Aug,2024</li>
+                                        <li><i class="fa-solid fa-user-tie"></i>   By Admin</li>
+                                    </ul> -->
+                                    <h2>Course's Name</h2>
+                                    <p class="sup-title-course">Description about course : Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate!</p>
+                                    <a href="blogDetails.html" class="btn" id="btn-section">
+                                        Learn More  <i class="bi bi-arrow-right-short"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="logo-footer" id="logo">
+                        Logo
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eveniet aperiam harum quos nisi. In aliquid velit et similique modi id deleniti quae? Perspiciatis, obcaecati? Voluptatem accusantium hic sequi neque.</p>
+                    <ul class="list-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Contacts</h2>
+                        <p>
+                            Abrag Alkholafaa <br>
+                            Tanta City<br>
+                            Egypt <br><br>
+                            <strong>Phone:</strong> +0123456789123<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div id="useful-links">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Packeges</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Subscribe For Updates</h2>
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom03">E-mail *</label>
+                                    <input type="email" class="form-control" id="validationCustom03" placeholder="Your Email *" required>
+                                </div>
+                            </div>
+                            <button class="btn btn-success" id="btn-section" type="submit">Send Message  <i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr id="hr-page">
+            <div class="copyright-footer">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        Copyright 2024 © <strong><a href="/">Olspark Academy</a></strong>. All rights reserved.
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="../js/main.js"></script>
+</body>
+</html>

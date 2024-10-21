@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css Page-->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <!--Icon-->
+    <link rel="icon" href="../img/icons/logo.jpg">
+    <!--Title Page-->
+    <title>blogs details</title>
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!--Icon link FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Link Cursoll Swiper Liprary-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--BoxIcon Library-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Up To Top-->
+    <button class="btnUpTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- Icon whatsapp -->
+    <a href="tel:0123456789123" id="whatsapp-icon" class="fixed-bottom">
+        <img src="../img/icons/whatsapp.png" width="50" alt="Whatsapp-chat">
+    </a>
+    <div class="fixed-top">
+        <!-- Topbar -->
+        <!-- <div class="topbar" id="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 order-1 order-2">
+                        <ul class="list-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-1 order-1">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-envelope-at-fill"></i> <span>Example#example.com</span></a></li>
+                            <li><a href="tel:0123456789123" target="_blank"><i class="bi bi-headset"></i> <span>0123456789123</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="home.html" id="logo">
+                    Logo
+                </a>
+                <button class="navbar-toggler" id="btn-toggle-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../img/text.png" width="50" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html" id="nav-item">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html" id="nav-item">About Us <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="courses.html" id="nav-item">Courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pricing.html" id="nav-item">packeges <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html" id="nav-item">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="enroll.html" id="nav-item">Enroll <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" role="button" id="nav-item" data-toggle="dropdown" aria-expanded="false">
+                                More <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="teachers.html" id="nav-item-drop">Our Teachers</a>
+                                <a class="dropdown-item" href="student.html" id="nav-item-drop">Our Student</a>
+                                <a class="dropdown-item" href="blogs.html" id="nav-item-drop">Our Blogs</a>
+                                <a class="dropdown-item" href="faqs.html" id="nav-item-drop">FAQS</a>
+                                <a class="dropdown-item" href="enroll.html" id="nav-item-drop">Enroll</a>
+                                <a class="dropdown-item" href="teachApp.html" id="nav-item-drop">Apply Jop</a>
+                                <a class="dropdown-item" href="payment.html" id="nav-item-drop">Payment</a>
+                                <a class="dropdown-item" href="policy.html" id="nav-item-drop">Privacy Policy</a>
+                                <a class="dropdown-item" href="ourterms.html" id="nav-item-drop">Terms & Conditions</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-facebook"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-instagram"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-x-twitter"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-linkedin-in"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" id="nav-item-icon"><i class="fa-brands fa-youtube"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html" id="nav-item">Login <span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link" href="#" id="nav-item-lang">AR <span class="sr-only">(current)</span></a>
+                        </li> -->
+                        <li class="nav-item active d-none d-lg-flex">
+                            <a class="nav-link active" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto" id="ul-login">
+                    <li class="nav-item active">
+                        <a class="nav-link active" style="text-decoration: none !important;" href="../html/home.html" id="nav-item-lang">EN <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Page Title -->
+    <div class="page-title" id="page-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <h2>Blogs Details</h2>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Blogs Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BLogs Details -->
+    <div class="blog-details single-blog pm-3" id="blog-details">
+        <div class="container">
+            <div class="title-section text-center">
+                <h2>Blog Details</h2>
+            </div>
+            <div class="row m-auto">
+                <div class="col-lg-8">
+                    <div class="card" id="cardarticle">
+                        <div class="top-img" id="topimg-article">
+                            <!-- <img src="../img/3d-ramadan-celebration-elements-scene.jpg" class="w-100" alt=""> -->
+                            <img src="../img/3d-elements-islamic-ramadan-celebration.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="content">
+                            <!-- <div class="left">
+                                <div class="avatar">
+                                    <img src="../img/girl.png" alt="">
+                                </div>
+                                <ul class="meta-list">
+                                    <li>
+                                        <a href="#">
+                                            <i class="far fa-comments"></i>
+                                        </a>
+                                        <span>30</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-share-alt"></i>
+                                        </a>
+                                        <span>22</span>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <div class="right">
+                                <p class="date">
+                                    December 19, 2021
+                                </p>
+                                <div class="post-header">
+                                    <h4 class="m-title">
+                                        Blogs Details Name
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        dunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida.
+                                        Risus do viverra maecenas accumsan lacus vel facilisis.
+                                    </p>
+                                    <blockquote>
+                                        Modi perferendis ipsa, dolorum eaque accusantium! Velitlibero fugit dolores
+                                        repellendus consequatur nisi, deserunt aperiam a ea ex hic, iusto atque, quas.
+                                        Aliquam rerum dolores saepe sunt, assumenda voluptas.
+                                    </blockquote>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        dunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida.
+                                        Risus do viverra maecenas accumsan lacus vel facilisis.
+                                    </p>
+                                    <h4 class="title">
+                                        Bring Your Loved Ones to See New Releases
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        dunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida.
+                                        Risus do viverra maecenas accumsan lacus vel facilisis.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        dunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida.
+                                        Risus do viverra maecenas accumsan lacus vel facilisis.
+                                    </p>
+                                </div>
+                                <div class="tags-area">
+                                    <div class="tags">
+                                        <span>
+                                            Tags :
+                                        </span>
+                                        <div class="tags-item">
+                                            <a href="#"> Tickets </a>
+                                            <a href="#"> Coming Soon </a>
+                                            <a href="#"> Movies </a>
+                                        </div>
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-author">
+                        <div class="author-thumb">
+                            <a href="#">
+                                <img src="../img/girl.png" alt="blog">
+                            </a>
+                        </div>
+                        <div class="author-content">
+                            <h5 class="title">
+                                <a href="#">
+                                    Lee Burke
+                                </a>
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                                labore et dolore magna aliqua.Quis ipsum suspendisse .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-comment">
+                        <h5 class="title">comments</h5>
+                        <ul class="comment-area">
+                            <li>
+                                <div class="blog-thumb">
+                                    <a href="#">
+                                        <img src="../img/girl.png" alt="blog">
+                                    </a>
+                                </div>
+                                <div class="blog-thumb-info">
+                                    <span>13 days ago</span>
+                                    <h6 class="title"><a href="#">carl morgan</a></h6>
+                                </div>
+                                <div class="blog-content">
+                                    <p>
+                                        Maecenas at velit eu erat egestas vestibulum id ut tellus. Sed et semper mauris.
+                                        Quisque eu lorem libero. Donec finibus metus tellus, eget rutrum est mattis non.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="blog-thumb">
+                                    <a href="#">
+                                        <img src="../img/girl.png" alt="blog">
+                                    </a>
+                                </div>
+                                <div class="blog-thumb-info">
+                                    <span>13 days ago</span>
+                                    <h6 class="title"><a href="#">john flores</a></h6>
+                                </div>
+                                <div class="blog-content">
+                                    <p>
+                                        Maecenas at velit eu erat egestas vestibulum id ut tellus. Sed et semper mauris.
+                                        Quisque eu lorem libero. Donec finibus metus tellus, eget rutrum est mattis non.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="blog-thumb">
+                                    <a href="#">
+                                        <img src="../img/girl.png" alt="blog">
+                                    </a>
+                                </div>
+                                <div class="blog-thumb-info">
+                                    <span>13 days ago</span>
+                                    <h6 class="title"><a href="#">carl morgan</a></h6>
+                                </div>
+                                <div class="blog-content">
+                                    <p>
+                                        Maecenas at velit eu erat egestas vestibulum id ut tellus. Sed et semper mauris.
+                                        Quisque eu lorem libero. Donec finibus metus tellus, eget rutrum est mattis non.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="leave-comment">
+                            <h5 class="title">leave comment</h5>
+                            <!-- <form class="blog-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Your Full Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Your Email Address" required="">
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Write A Message" class="form-control" rows="5" required=""></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="custom-button" type="submit" id="btn-section"></button>
+                                </div>
+                            </form> -->
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom01">Enter your Full name</label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Your name" required>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom02">Enter your Email address</label>
+                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="textarea">Write a message</label>
+                                        <textarea class="form-control" id="textarea" placeholder="Message" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success" id="btn-section" type="submit">Submit Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="col-left">
+                        <div class="widget widget-search">
+                            <h5 class="title">search</h5>
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom01">Enter your Search Content</label>
+                                        <input type="search" class="form-control" id="validationCustom01" placeholder="Your name" required>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success" id="btn-section" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="widget widget-categories">
+                            <h5 class="title">categories</h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>Showtimes &amp; Tickets</span><span>50</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Latest Trailers</span><span>43</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Coming Soon </span><span>34</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>In Theaters</span><span>63</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Release Calendar </span><span>11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Stars</span><span>30</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Horror Movie </span><span>55</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget widget-tags">
+                            <h5 class="title">featured tags</h5>
+                            <ul>
+                                <li>
+                                    <a href="#">creative</a>
+                                </li>
+                                <li>
+                                    <a href="#">design</a>
+                                </li>
+                                <li>
+                                    <a href="#">skill</a>
+                                </li>
+                                <li>
+                                    <a href="#">template</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">landing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="logo-footer">
+                        <img src="../img/icons/logo.png" width="100" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eveniet aperiam harum quos nisi. In aliquid velit et similique modi id deleniti quae? Perspiciatis, obcaecati? Voluptatem accusantium hic sequi neque.</p>
+                    <ul class="list-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div id="useful-links">
+                        <h2>Our Courses</h2>
+                        <ul>
+                            <li><a href="#">Islamic studies</a></li>
+                            <li><a href="#">Islamic duaa</a></li>
+                            <li><a href="#">The life of prophet mohammed(the sira)</a></li>
+                            <li><a href="#">Quran Recitation with Tajweed</a></li>
+                            <li><a href="#">Hifz with Tajweed</a></li>
+                            <li><a href="#">Quran for Kids</a></li>
+                            <li><a href="#">Tajweed rules</a></li>
+                            <li><a href="#">Arabic language course</a></li>
+                            <li><a href="#">Arabic Reading</a></li>
+                            <li><a href="#">Arabic speaking</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div id="useful-links">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Packeges</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Contacts</h2>
+                        <p>
+                            Abrag Alkholafaa <br>
+                            Tanta City<br>
+                            Egypt <br><br>
+                            <strong>Phone:</strong> +0123456789123<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr id="hr-page">
+            <div class="copyright-footer">
+                Copyright 2024 © <strong><a href="/">Olspark Academy</a></strong>. All rights reserved.
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="../js/main.js"></script>
+</body>
+</html>
